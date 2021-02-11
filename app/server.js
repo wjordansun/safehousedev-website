@@ -5,8 +5,8 @@ const bodyParser = require('body-parser')
 const app = express()
 
 const MongoClient = require('mongodb').MongoClient
-//const uri = "mongodb://18.188.149.108:27016"
-const uri = "mongodb+srv://wjordansun:ekoater@cluster0.dqtjr.mongodb.net/star-wars-quotes?retryWrites=true&w=majority";
+const uri = "mongodb://73.112.72.197:27016"
+//const uri = "mongodb+srv://wjordansun:ekoater@cluster0.dqtjr.mongodb.net/star-wars-quotes?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 client.connect(err => {
